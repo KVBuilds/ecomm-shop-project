@@ -7,6 +7,7 @@ First, run the development server:
 - Neon DB
 - Tailwind, Shadcn
 - Uploadthing
+- Kinde Authentication
 - Stripe
 
 
