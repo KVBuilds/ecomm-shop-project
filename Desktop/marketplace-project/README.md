@@ -1,18 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+Ecomm-related project that allows users to sign up, login/logout, upload a file asset, size/adjust based on fixed template, reupload, save, and use validated paymenmt options to process overall flow.
+## Working Stack
 
 First, run the development server:
+- Nextjs, React
+- Prisma
+- Neon DB
+- Tailwind, Shadcn
+- Uploadthing
+- Stripe
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

@@ -1,20 +1,20 @@
 "use client"
 
+import LoginModal from "@/components/LoginModal"
 import Phone from "@/components/Phone"
 import { Button } from "@/components/ui/button"
+import { useToast } from "@/components/ui/use-toast"
 import { BASE_PRICE, PRODUCT_PRICES } from "@/config/products"
 import { cn, formatPrice } from "@/lib/utils"
-import { COLORS, FINISHES, MODELS } from "@/validators/option-validators"
+import { COLORS, MODELS } from "@/validators/option-validators"
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs"
 import { Configuration } from "@prisma/client"
 import { useMutation } from "@tanstack/react-query"
 import { ArrowRightIcon, Check } from "lucide-react"
+import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import Confetti from "react-dom-confetti"
 import { createCheckoutSession } from "./actions"
-import { useRouter } from "next/navigation"
-import { useToast } from "@/components/ui/use-toast"
-import {useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs"
-import LoginModal from "@/components/LoginModal"
 
 
 const DesignPreview = ({configuration}: {configuration: Configuration}) => {
